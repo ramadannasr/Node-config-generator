@@ -1,0 +1,37 @@
+<plugin
+        id="pl.helwan.fci.vp.plugin"
+        name="Generate Node Config Code"
+        description="Generate Node Config Code"
+        provider="ramadan nasr @ FCI"
+        class="pl.helwan.fci.vp.plugin.NodeGenerator">
+
+    <actionSets>
+        <contextSensitiveActionSet id="pl.helwan.fci.uml2code.plugin.actionset">
+            <contextTypes all="false">
+                <include type="Package"/>
+            </contextTypes>
+            <action
+                    id="pl.helwan.fci.vp.plugin.node.NodesGeneratorContextActionController"
+                    label="Generate Nodes configuration"
+                    style="normal"
+                    menuPath="OpenSpecification">
+                <actionController class="pl.helwan.fci.vp.plugin.node.NodesGeneratorContextActionController"/>
+            </action>
+        </contextSensitiveActionSet>
+
+        <contextSensitiveActionSet id="pl.helwan.fci.uml2code.plugin.actionset">
+            <contextTypes all="false">
+                <include type="Node"/>
+            </contextTypes>
+            <action
+                    id="pl.helwan.fci.vp.plugin.node.NodeGeneratorContextActionController"
+                    label="Generate Node configuration"
+                    style="normal"
+                    menuPath="OpenSpecification">
+                <actionController class="pl.helwan.fci.vp.plugin.node.NodeGeneratorContextActionController"/>
+            </action>
+        </contextSensitiveActionSet>
+
+    </actionSets>
+
+</plugin>
