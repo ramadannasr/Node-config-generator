@@ -1,0 +1,4 @@
+socket = "<!--ipc.socket-->"
+workdir = "<!--ipc.workdir-->"
+timeout = <!--ipc.timeout-->
+dialTimeout = <!--ipc.dialTimeout-->

@@ -1,0 +1,94 @@
+[Eth]
+NetworkId =<!--eth.networkId-->
+SyncMode ="<!--eth.syncMode-->"
+NoPruning =<!--eth.noPruning-->
+NoPrefetch =<!--eth.noPrefetch-->
+LightPeers =<!--eth.lightPeers-->
+UltraLightFraction =<!--eth.ultraLightFraction-->
+DatabaseCache =<!--eth.databaseCache-->
+DatabaseFreezer = "<!--eth.databaseFreezer-->"
+TrieCleanCache =<!--eth.trieCleanCache-->
+TrieDirtyCache =<!--eth.trieDirtyCache-->
+TrieTimeout =<!--eth.trieTimeout-->
+EnablePreimageRecording =<!--eth.enablePreimageRecording-->
+EWASMInterpreter = "<!--eth.EWASMInterpreter-->"
+EVMInterpreter = "<!--eth.evmInterpreter-->"
+
+[Eth.Miner]
+GasFloor =<!--eth.miner.gasFloor-->
+GasCeil =<!--eth.miner.gasCeil-->
+GasPrice =<!--eth.miner.gasPrice-->
+Recommit =<!--eth.miner.recommit-->
+Noverify =<!--eth.miner.noverify-->
+AllowedFutureBlockTime =<!--eth.miner.allowedFutureBlockTime-->
+
+[Eth.Ethash]
+CacheDir = "<!--eth.ethash.cacheDir-->"
+CachesInMem =<!--eth.ethash.cachesInMem-->
+CachesOnDisk =<!--eth.ethash.cachesOnDisk-->
+DatasetDir = "<!--eth.ethash.datasetDir-->"
+DatasetsInMem =<!--eth.ethash.datasetsInMem-->
+DatasetsOnDisk =<!--eth.ethash.datasetsOnDisk-->
+PowMode =<!--eth.ethash.powMode-->
+
+[Eth.TxPool]
+Locals = <!--eth.txPool.locals-->
+NoLocals =<!--eth.txPool.noLocals-->
+Journal = "<!--eth.txPool.journal-->"
+Rejournal = <!--eth.txPool.rejournal-->
+PriceLimit =<!--eth.txPool.priceLimit-->
+PriceBump =<!--eth.txPool.priceBump-->
+AccountSlots =<!--eth.txPool.accountSlots-->
+GlobalSlots =<!--eth.txPool.globalSlots-->
+AccountQueue =<!--eth.txPool.accountQueue-->
+GlobalQueue =<!--eth.txPool.globalQueue-->
+Lifetime =<!--eth.txPool.lifetime-->
+TransactionSizeLimit =<!--eth.txPool.transactionSizeLimit-->
+MaxCodeSize =<!--eth.txPool.maxCodeSize-->
+
+[Eth.GPO]
+Blocks =<!--eth.GPO.blocks-->
+Percentile =<!--eth.GPO.percentile-->
+
+[Eth.Istanbul]
+RequestTimeout =<!--eth.istanbul.requestTimeout-->
+BlockPeriod =<!--eth.istanbul.blockPeriod-->
+Epoch =<!--eth.istanbul.epoch-->
+Ceil2Nby3Block = <!--eth.istanbul.ceil2Nby3Block-->
+
+[Shh]
+MaxMessageSize = <!--shh.maxMessageSize-->
+MinimumAcceptedPOW = <!--shh.minimumAcceptedPOW-->
+RestrictConnectionBetweenLightClients = <!--shh.restrictConnectionBetweenLightClients-->
+
+[Node]
+DataDir = "<!--node.dataDir-->"
+omitempty = "<!--node.omitempty-->"
+IPCPath = "<!--node.IPCPath-->"
+HTTPPort = <!--node.httpPort-->
+HTTPVirtualHosts = <!--node.httpVirtualHosts-->
+HTTPModules = <!--node.httpModules-->
+WSPort = <!--node.WSPort-->
+WSModules = <!--node.WSModules-->
+GraphQLPort = <!--node.graphQLPort-->
+GraphQLVirtualHosts = <!--node.graphQLVirtualHosts-->
+
+[Node.P2P]
+MaxPeers = <!--node.P2P.maxPeers-->
+NoDiscovery = <!--node.P2P.noDiscovery-->
+BootstrapNodes = <!--node.P2P.bootstrapNodes-->
+BootstrapNodesV5 = <!--node.P2P.bootstrapNodesV5-->
+StaticNodes = <!--node.P2P.staticNodes-->
+TrustedNodes = <!--node.P2P.trustedNodes-->
+ListenAddr = "<!--node.P2P.listenAddr-->"
+EnableMsgEvents = <!--node.P2P.enableMsgEvents-->
+
+[Node.HTTPTimeouts]
+ReadTimeout = <!--node.httpTimeouts.readTimeout-->
+WriteTimeout = <!--node.httpTimeouts.writeTimeout-->
+IdleTimeout = <!--node.httpTimeouts.idleTimeout-->
+
+[Dashboard]
+Host = "<!--dashboard.host-->"
+Port = <!--dashboard.port-->
+Refresh = <!--dashboard.refresh-->

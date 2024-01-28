@@ -1,0 +1,9 @@
+
+       <!--node.name-->:  {
+          host: <!--node.httpVirtualHosts-->,
+          port: <!--node.httpPort-->,
+          network_id: "<!--eth.networkId-->", // Match any network id
+          gasPrice: <!--eth.miner.gasPrice-->,
+          gas: <!--eth.miner.gasFloor-->,
+          type: "quorum"
+        },

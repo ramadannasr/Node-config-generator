@@ -1,0 +1,19 @@
+    node {
+            name "<!--myLegalName-->"
+            p2pAddress "<!--p2pAddress-->"
+            rpcSettings {
+                address "<!--rpcSettings.address-->"
+                adminAddress "<!--rpcSettings.adminAddress-->"
+                standAloneBroker <!--rpcSettings.standAloneBroker-->
+                extraConfig = [
+                               'rpcSettings.useSsl' : <!--rpcSettings.useSsl-->, ]
+            }
+            devMode <!--devMode-->
+            sshdPort <!--sshd.port-->
+            notary = [
+                validating : <!--notary.validating-->
+            ]
+    }
+
+
+

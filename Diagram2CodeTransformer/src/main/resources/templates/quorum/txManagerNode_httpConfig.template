@@ -1,0 +1,9 @@
+httpUrl = "<!--http.httpUrl-->"
+tlsMode = "<!--http.tlsMode-->"
+tlsRootCA = "<!--http.tlsRootCA-->"
+tlsClientCert = "<!--http.tlsClientCert-->"
+tlsClientKey = "<!--http.tlsClientKey-->"
+timeout = <!--http.timeout-->
+httpIdleConnTimeout = <!--http.httpIdleConnTimeout-->
+httpWriteBufferSize = <!--http.httpWriteBufferSize-->
+httpReadBufferSize = <!--http.httpReadBufferSize-->

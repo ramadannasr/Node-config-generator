@@ -1,0 +1,30 @@
+myLegalName = "<!--myLegalName-->"
+devMode = <!--devMode-->
+emailAddress = "<!--emailAddress-->"
+p2pAddress="<!--p2pAddress-->"
+rpcSettings {
+    address="<!--rpcSettings.address-->"
+    adminAddress="<!--rpcSettings.adminAddress-->"
+    standAloneBroker=<!--rpcSettings.standAloneBroker-->
+    useSsl=<!--rpcSettings.useSsl-->
+}
+security { authService {
+                   dataSource {
+                       type=<!--security.authService.dataSource.type-->
+                       users=[
+                            {
+                       <!--rpcUsers-->
+                             }
+                       ]
+                   }
+               }
+               }
+sshd = {
+	port = <!--sshd.port-->
+}
+dataSourceProperties {
+    dataSource {
+        url="<!--dataSourceProperties.dataSource.url-->"
+    }
+}
+detectPublicIp=<!--detectPublicIp-->
